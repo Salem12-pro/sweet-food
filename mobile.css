@@ -1,0 +1,7 @@
+@media screen and (max-width:900px) {
+    /* footer section starts here  */
+    footer{
+        height: 300px;
+    }
+    /* footer section ends here  */
+}
