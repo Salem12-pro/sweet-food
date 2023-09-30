@@ -9,10 +9,9 @@ body {
 }
 /* nav bar starts here  */
 nav {
+  display: flex;
   height: 80px;
   width: 100%;
-  display: flex;
-  position: fixed;
 }
 
 nav ul {
@@ -21,6 +20,16 @@ nav ul {
   display: flex;
   padding-top: 20px;
 }
+
+.desktopview {
+  display: flex;
+}
+
+.mobileview {
+  display: none;
+}
+
+
 
 .logo1 {
   font-size: 50px;
@@ -78,9 +87,11 @@ nav ul {
 /* first section starts here  */
 
 .sec1 {
-  padding-top: 100px;
+  width: 100%;
+  padding-top: 150px;
   background: url(./Images/sec1bng.jpeg);
   background-size: cover;
+  padding-bottom: 20px;
 }
 
 .div1sec1 h1 {
@@ -91,6 +102,7 @@ nav ul {
 }
 
 .div1sec1 p {
+  width: 35%;
   padding-left: 50px;
   color: rgba(0, 0, 0, 0.656);
   font-size: 15px;
@@ -103,7 +115,6 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   padding-left: 50px;
-  margin-bottom: 10px;
 }
 
 .button2 {
@@ -149,6 +160,7 @@ nav ul {
   height: 110vh;
   width: 100%;
   padding-left: 50px;
+  padding: 40px;
 }
 
 .sec3div1 {
@@ -161,7 +173,6 @@ nav ul {
 .sec3div11 {
   width: 40%;
   height: 80%;
-  margin-top: 30px;
   background: url(./Images/sec3div11.png);
   background-position: center;
   background-size: cover;
@@ -171,8 +182,6 @@ nav ul {
 
 .sec3div12 {
   width: 50%;
-  height: 80%;
-  margin-top: 10px;
   padding: 0 30px;
 }
 
@@ -192,8 +201,7 @@ nav ul {
 }
 
 .sec3div2 {
-  width: 125%;
-  height: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +245,7 @@ nav ul {
 }
 
 .sec3div2 {
-  width: 1350px;
+  width: 100%;
 }
 
 .sec3div22 {
@@ -247,6 +255,8 @@ nav ul {
   background-position: center;
   background-repeat: no-repeat;
   padding-right: 0px;
+  margin-left: 20px;
+
 }
 
 /* third sections ends here    */
@@ -258,7 +268,6 @@ nav ul {
   justify-content: center;
   height: auto;
   width: 100%;
-  margin-top: 130px;
   background: var(--gray-gradient), url(./Images/sec4.jpeg);
   background-position: bottom;
   background-size: cover;
@@ -283,14 +292,13 @@ nav ul {
 .sec4div1 p {
   padding: 25px 50px;
   text-align: center;
-
 }
 
 .playbtn {
   height: 50px;
   display: flex;
   width: 50px;
-  border: 2px solid #ffffff;
+  border: 2px solid white;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -451,11 +459,12 @@ span {
 .sec6 {
   height: 100vh;
   border-top: solid #a82d49 80px;
+  padding: 40px;
 }
 
 .div1sec6 {
   width: 100%;
-  margin: 80px 0px;
+  padding: 40px 0;
 }
 
 .div1sec6 h1 {
@@ -509,14 +518,13 @@ span {
 .div4sec6 {
   display: flex;
   width: 100%;
-  height: 30vh;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background: var(--gray-gradient), url(./Images/sec7.jpeg);
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 40px;
 }
 
 .div4sec6 h1 {
@@ -525,17 +533,12 @@ span {
   font-size: 30px;
 }
 
-.div41sec6 {
-  margin-right: 200px;
-}
-
 .div5sec6 {
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
-  font-size: 25px;
 }
 
 .div5sec6 p {
@@ -546,18 +549,18 @@ span {
   text-align: center;
 }
 
-.div5sec6 h1{
+.div5sec6 h1 {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-
 input {
   height: 50px;
   width: 150px;
-  margin-left: 400px;
   border: #a82d49 solid 2px;
+  transition: all 1s ease;
+  padding-left: 20px;
 }
 
 input:hover {
@@ -568,33 +571,30 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 350px;
 }
 /* sixth section ends here  */
 /* footer starts here  */
 
 footer {
   display: flex;
-  height: 100px;
-  margin-top: 150px;
+  height: auto;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-evenly;
   background: #a82d49;
-  width: 100%;
   color: #ffffff;
+  padding: 30px;
 }
 
 .a20 {
-  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.div30 {
-  width: 40%;
+.icons {
   display: flex;
-  align-items: flex-start;
-  height: 100%;
 }
 
 .button3 {
@@ -606,37 +606,31 @@ footer {
   font-size: 20px;
   align-items: center;
   justify-content: center;
-  margin: 30px 10px;
-}
-
-.fa-brands:hover {
-  color: #000;
+  margin-left: 20px;
 }
 
 .button3:hover {
-  color: #000;
+  background: #000;
 }
 
 .div81 {
-  width: 250px;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  height: 30px;
+  width: auto;
+  border: 2px solid white;
 }
 
 .div81 p {
-  height: 60px;
-  width: 50%;
   display: flex;
   font-size: 12px;
   align-items: center;
-  margin-top: 25px;
-  margin-left: 250px;
   justify-content: center;
-  border: solid white 2px;
 }
 
 .fa- {
-  color: #fff;
+  color: #000;
 }
 /* footer ends here  */
