@@ -2,6 +2,7 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +26,7 @@ nav ul {
   display: flex;
 }
 
-.mobileview {
+.mobilenavbar {
   display: none;
 }
 
@@ -88,7 +89,7 @@ nav ul {
 
 .sec1 {
   width: 100%;
-  padding-top: 150px;
+  padding-top: 50px;
   background: url(./Images/sec1bng.jpeg);
   background-size: cover;
   padding-bottom: 20px;
